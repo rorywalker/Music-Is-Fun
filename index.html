@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Is Fun</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h1>MUSIC IS FUN</h1>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container search">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <form class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
+          <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+          <div class="form-group">
+            <input type="text" class="form-control" name="artist">
+            <button type="submit" class="btn btn-success btnBlue" id="get-music-button">FIND MUSIC</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div id="songs"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="itunes-service.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
