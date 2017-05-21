@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-
-
 <html lang="en">
 
 <head>
@@ -16,37 +14,42 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-        <h1>MUSIC IS FUN</h1>
+      <div class="col-md-3"></div>
+      <div class="col-md-5">
+        <div class="panel  panel-primary">
+          <div class="panel-heading centerText"><h1>MUSIC IS FUN</div>
+            <div class="panel-body">
+              <img class="panelPic" src="musicPic.png">
+            </div>
+          </div>
       </div>
+      <div class="col-md-4"></div>
     </div>
   </div>
-
-
 
   <div class="container search">
     <div class="row">
       <div class="col-md-4"></div>
       <div class="col-md-4">
         <form class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
-          <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
           <div class="form-group">
             <input type="text" class="form-control" name="artist">
-            <button type="submit" class="btn btn-success btnBlue" id="get-music-button">FIND MUSIC</button>
+            <button type="submit" class="btn btn-success btnBlue" id="get-music-button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
           </div>
         </form>
       </div>
     </div>
   </div>
 
-
   <div class="container">
     <div class="row">
       <div class="col-md-4"></div>
-      <div class="col-md-4">
+      <div class="col-md-4 moveLeft">
         <div id="songs"></div>
       </div>
+      <div class="col-md-4"></div>
     </div>
   </div>
 

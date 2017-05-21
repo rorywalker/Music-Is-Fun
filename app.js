@@ -14,7 +14,6 @@ function ItunesController() {
 
 
   function drawSongs(songList) {
-    // This is where you task begins
     var id = 0;
     var template = '';
 
